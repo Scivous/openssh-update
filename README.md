@@ -1,6 +1,6 @@
 # openssh-update
 
-openssh一键自动化更新脚本
+openssh一键自动化更新脚本，提高工作效率！。！
 
 目前仅适用于ubuntu系统
 
