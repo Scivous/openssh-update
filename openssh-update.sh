@@ -12,7 +12,7 @@ cd ~ && mkdir update && cd update
 #官方下载地址: http://www.zlib.net/
 wget https://openssh-update.oss-cn-beijing.aliyuncs.com/zlib-1.2.13.tar.gz
 wget https://openssh-update.oss-cn-beijing.aliyuncs.com/openssl-1.1.1q.tar.gz
-wget https://openssh-update.oss-cn-beijing.aliyuncs.com/openssh-8.8p1.tar.gz
+wget https://openssh-update.oss-cn-beijing.aliyuncs.com/openssh-9.6p1.tar.gz
 
 # 前置安装和卸载
 apt-get -y install gcc
@@ -47,8 +47,8 @@ cd ..
 mv /etc/init.d/ssh /etc/init.d/ssh.old
 cp -r /etc/ssh /etc/ssh.old
 # 安装openssh
-tar xf openssh-8.8p1.tar.gz
-cd openssh-8.8p1
+tar xf openssh-9.6p1.tar.gz
+cd openssh-9.6p1
 ./configure --prefix=/usr --sysconfdir=/etc/ssh --with-md5-passwords --with-pam --with-zlib=/usr/local/zlib --with-ssl-dir=/usr/local/ssl --with-privsep-path=/var/lib/sshd && make && make install
 # 还原ssh配置
 cd /etc/ssh
